@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: mFont;
+      src: url('./font/WenRouDongRiNaiLaoTi-2.ttf');
+    }
+    * {
+      font-family: mFont;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeYang Portfolio</title>
+</head>
+<body>
+  <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-300 relative">
+    <nav class="w-full fixed top-0 bg-white z-10 overflow-hidden">
+      <div class="container mx-auto py-5 flex justify-between">
+        <div>
+            <a href="https://github.com/Bruce-shuai" class="text-3xl">
+              <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <ul class="hidden md:flex space-x-10 items-center text-gray-600 font-bold text-lg">
+          <li class="hover:text-gray-500">
+            <a href="#">首页</a>
+          </li>
+          <li class="hover:text-gray-500">
+            <a href="#">关于</a>
+          </li>
+        </ul>
+        <img src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="moon">
+        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-10">
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+        </div>
+        <ul id="menu" class="bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center hidden">
+          <li class="hover:text-gray-500">
+            <a href="#">首页</a>
+          </li>
+          <li class="hover:text-gray-500">
+            <a href="#">关于</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <img src="./img/heyang.png" alt="heyang" class="absolute top-20 left-0 lg:left-0 mx-auto h-1/6 object-cover">
+    <div class="absolute top-32 left-48">
+      <span class="text-gray-600">何阳 He Yang</span>
+      <p class="text-red-500">一位热爱前端的开发者</p>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
