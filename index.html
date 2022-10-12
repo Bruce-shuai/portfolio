@@ -1,61 +1,133 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <style>
-    @font-face {
-      font-family: mFont;
-      src: url('./font/WenRouDongRiNaiLaoTi-2.ttf');
-    }
-    * {
-      font-family: mFont;
-    }
-  </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HeYang Portfolio</title>
-</head>
-<body>
-  <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-300 relative">
-    <nav class="w-full fixed top-0 bg-white z-10 overflow-hidden">
-      <div class="container mx-auto py-5 flex justify-between">
-        <div>
-            <a href="https://github.com/Bruce-shuai" class="text-3xl">
-              <i class="fa-brands fa-github"></i>
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- INTRODUCTION -->
+      <div class="intro">
+        <div class="salute">
+          <div class="saluteTextContainer">
+            <h1 class="saluteText">哈喽！</h1>
+          </div>
+          <div class="saluteImgContainer">
+            <img src="./img/person.png" alt="" class="saluteImg" />
+          </div>
         </div>
-        <ul class="hidden md:flex space-x-10 items-center text-gray-600 font-bold text-lg">
-          <li class="hover:text-gray-500">
-            <a href="#">首页</a>
-          </li>
-          <li class="hover:text-gray-500">
-            <a href="#">关于</a>
-          </li>
-        </ul>
-        <img src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="moon">
-        <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-10">
-          <div class="w-6 h-0.5 bg-black"></div>
-          <div class="w-6 h-0.5 bg-black"></div>
-          <div class="w-6 h-0.5 bg-black"></div>
+        <div class="nameContainer purple">
+          <p class="name">我叫何阳</p>
+          <p class="jobTitle">一位前端开发者</p>
         </div>
-        <ul id="menu" class="bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center hidden">
-          <li class="hover:text-gray-500">
-            <a href="#">首页</a>
-          </li>
-          <li class="hover:text-gray-500">
-            <a href="#">关于</a>
-          </li>
-        </ul>
       </div>
-    </nav>
-    <img src="./img/heyang.png" alt="heyang" class="absolute top-20 left-0 lg:left-0 mx-auto h-1/6 object-cover">
-    <div class="absolute top-32 left-48">
-      <span class="text-gray-600">何阳 He Yang</span>
-      <p class="text-red-500">一位热爱前端的开发者</p>
+      <!-- PROJECTS -->
+      <div class="projects">
+        <h1 class="projectsTitle"></h1>
+        <div class="project">
+          <div class="phone">
+            <img src="./img/phone.png" alt="" />
+            <div class="phoneScreen">
+              <img src="./img/phoneApp.png" alt="" class="phoneApp" />
+            </div>
+          </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle">Vortex</h1>
+            <p class="projectDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              repudiandae quia natus et iste earum ab fugiat eum ipsam, illum
+              vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo
+              veritatis possimus! Accusamus repudiandae quia natus et iste earum
+              ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt
+              laudantium recusandae illo veritatis possimus! laudantium
+              recusandae illo veritatis possimus! recusandae illo veritatis.
+            </p>
+            <button class="projectButton">Learn More</button>
+          </div>
+        </div>
+        <div class="project">
+          <div class="laptop">
+            <img src="./img/laptop.png" alt="" />
+            <div class="laptopScreen">
+              <img src="./img/laptopApp.png" alt="" class="laptopApp" />
+            </div>
+          </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle">Vortex</h1>
+            <p class="projectDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              repudiandae quia natus et iste earum ab fugiat eum ipsam, illum
+              vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo
+              veritatis possimus! Accusamus repudiandae quia natus et iste earum
+              ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt
+              laudantium recusandae illo veritatis possimus! laudantium
+              recusandae illo veritatis possimus! recusandae illo veritatis.
+            </p>
+            <button class="projectButton">Learn More</button>
+          </div>
+        </div>
+        <div class="project">
+          <div class="phone">
+            <img src="./img/phone.png" alt="" />
+            <div class="phoneScreen">
+              <img src="./img/phoneApp.png" alt="" class="phoneApp" />
+            </div>
+          </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle">Vortex</h1>
+            <p class="projectDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              repudiandae quia natus et iste earum ab fugiat eum ipsam, illum
+              vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo
+              veritatis possimus! Accusamus repudiandae quia natus et iste earum
+              ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt
+              laudantium recusandae illo veritatis possimus! laudantium
+              recusandae illo veritatis possimus! recusandae illo veritatis.
+            </p>
+            <button class="projectButton">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!-- GITHUB -->
+      <div class="githubContainer">
+        <h1 class="githubTitle">可以在下列平台了解更多我的信息</h1>
+        <div class="githubChart">
+          <div class="dates">
+            <span>Jan</span>
+            <span>Feb</span>
+            <span>Mar</span>
+            <span>Apr</span>
+            <span>May</span>
+            <span>Jun</span>
+            <span>Jul</span>
+            <span>Agu</span>
+            <span>Sep</span>
+            <span>Oct</span>
+            <span>Nov</span>
+            <span>Dec</span>
+          </div>
+          <div class="boxContainer"></div>
+        </div>
+        <div class="study-platform">
+          <a href="https://github.com/Bruce-shuai">
+            <i class="fa-brands fa-github study-icon"></i>
+          </a>
+          <a href="http://heyyy.site/">
+            <i class="fa-solid fa-house study-icon"></i>
+          </a>
+          <a href="https://juejin.cn/user/862446490487725">
+            <img src="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg" alt="juejin">
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="./app.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
